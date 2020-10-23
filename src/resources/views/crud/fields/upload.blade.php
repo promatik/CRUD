@@ -1,4 +1,6 @@
 @php
+    $field['wrapper'] = $field['wrapper'] ?? $field['wrapperAttributes'] ?? [];
+
    if (!isset($field['wrapper']) || !isset($field['wrapper']['data-init-function'])){
         $field['wrapper']['data-init-function'] = 'bpFieldInitUploadElement';
     }
